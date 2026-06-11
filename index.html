@@ -6,7 +6,7 @@
 <title>Valeria · Mis XV Años</title>
 <!--
   DESIGN NOTES / ASSUMPTIONS (built in one pass per brief):
-  - Assets mapped: uploads/vid1b.mp4 = hero video · uploads/img1.png = poster + gallery
+  - Assets mapped: uploads/vid1b.mp4 = hero video · uploads/img1b.png = poster + gallery
     uploads/img2.png = secondary section image · uploads/BG.png = section backgrounds
   - Video ping-pong: negative playbackRate is NOT supported in Chrome/Firefox, so the
     reverse pass is driven by requestAnimationFrame stepping currentTime backwards.
@@ -597,7 +597,7 @@ section{ position:relative; padding:80px 24px; }
 <!-- ============ 1 · HERO ============ -->
 <section class="hero" data-screen-label="Hero">
   <video id="heroVideo" autoplay muted playsinline preload="auto"
-         poster="uploads/img1.png" aria-hidden="true"></video>
+         poster="uploads/img1b.png" aria-hidden="true"></video>
   <div class="vignette"></div>
   <div class="hero-content">
     <span class="hero-label">La noche más especial de su vida</span>
@@ -650,7 +650,7 @@ section{ position:relative; padding:80px 24px; }
       </svg>
     </div>
     <div class="photo-frame reveal">
-      <img src="uploads/img1.png" alt="Valeria en su vestido de quinceañera entre flores de cerezo" loading="lazy" />
+      <img src="uploads/img1b.png" alt="Valeria en su vestido de quinceañera entre flores de cerezo" loading="lazy" />
     </div>
   </div>
 </section>
