@@ -11,7 +11,7 @@
   - Video ping-pong: negative playbackRate is NOT supported in Chrome/Firefox, so the
     reverse pass is driven by requestAnimationFrame stepping currentTime backwards.
     Forward = native playback; Reverse = rAF; loops infinitely and seamlessly.
-  - Countdown target date is a PLACEHOLDER: 2026-08-15 6:30 PM. Update CONFIG.targetDate below.
+  - Countdown target date: 2026-07-25 6:00 PM.
   - Padrinos names pending — card structure is ready for population.
 -->
 <style>
@@ -649,7 +649,7 @@ section{ position:relative; padding:80px 24px; }
     <div class="date-display reveal">
       <div class="date-dow">Sábado</div>
       <!-- PLACEHOLDER DATE — confirm with user -->
-      <div class="date-main">15 de Agosto</div>
+      <div class="date-main">25 de Julio</div>
       <div class="date-year">2026</div>
     </div>
     <div class="time-blocks">
@@ -923,7 +923,7 @@ function saveToCalendar(){
     'VERSION:2.0',
     'PRODID:-//Valeria XV//Invitacion//ES',
     'BEGIN:VEVENT',
-    'DTSTART;TZID=America/New_York:20260815T140000',
+    'DTSTART;TZID=America/New_York:20260725T140000',
     'DTEND;TZID=America/New_York:20260816T000000',
     'SUMMARY:Quinceañera de Valeria Cortes Marquina',
     'DESCRIPTION:Sus Quince Años\nCeremonia Religiosa: St. Mark Catholic Church · 2:00 PM\nCelebración: Fiestas Banquet Hall · 6:30 PM – 12:00 AM',
@@ -945,7 +945,7 @@ function saveToCalendar(){
 /* ===================== CONFIG ===================== */
 // PLACEHOLDER DATE — update when confirmed (format: YYYY-MM-DDTHH:mm:ss local time)
 var CONFIG = {
-  targetDate: new Date('2026-08-15T18:30:00')
+  targetDate: new Date('2026-07-25T18:00:00')
 };
 
 /* ===================== HERO VIDEO PING-PONG =====================
